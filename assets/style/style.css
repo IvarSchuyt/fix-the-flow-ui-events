@@ -14,7 +14,7 @@
 body {
   margin: 2rem;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 2rem;
   background: var(--secondary);
 }
@@ -38,6 +38,108 @@ a:hover {
 }
 
 /* UI Event Classes */
+.frontend {
+  animation-name: frontend;
+  animation-duration: 0.6s;
+  animation-iteration-count: 1;
+}
+
+@keyframes frontend {
+  0% {
+    background: var(--secondary);
+    color: var(--highlight-primary);
+  }
+  50% {
+    border-color: var(--highlight-secondary);
+    background: var(--highlight-secondary);
+    color: var(--secondary);
+  }
+  100% {
+    background: var(--secondary);
+    color: var(--highlight-primary);
+  }
+}
+
+/* ------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------ */
+
+.design {
+  animation-name: design;
+  animation-duration: 0.6s;
+  animation-iteration-count: 1;
+}
+
+@keyframes design {
+  0% {
+    transform: scale(1, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  75% {
+    transform: scale(1.1, 1);
+  }
+  100% {
+    transform: scale(1 1);
+  }
+}
+
+/* ------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------ */
+
+.and {
+  animation-name: and;
+  animation-duration: 0.6s;
+  animation-iteration-count: 1;
+}
+
+@keyframes and {
+  0% {
+    rotate: 360deg;
+  }
+}
+
+/* ------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------ */
+
+.development {
+  animation-name: development;
+  animation-duration: 0.7s;
+  animation-iteration-count: 1;
+}
+
+@keyframes development {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(50rem);
+  }
+}
+
+/* ------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------ */
+
+.sprint5 {
+  animation-name: sprint5;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes sprint5 {
+  0% {
+    border-radius: var(--pill);
+  }
+  50% {
+    border-radius: 1rem;
+  }
+  100% {
+    border-radius: var(--pill);
+  }
+}
+
+/* ------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------ */
 
 /* Jump animation on the interaction link */
 a:nth-of-type(12) {
