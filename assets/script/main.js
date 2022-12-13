@@ -66,3 +66,42 @@ sprint5.addEventListener("animationend", shapeHandler);
 function shapeHandler() {
   sprint5.classList.toggle("sprint5");
 }
+
+// -------------------------------------------------------------
+// -------------------------------------------------------------
+
+let fix = document.querySelector("a:nth-of-type(6)");
+
+fix.addEventListener("click", shakeHandler);
+fix.addEventListener("animationend", shakeHandler);
+
+function shakeHandler() {
+  fix.classList.toggle("fix");
+}
+
+// -------------------------------------------------------------
+// -------------------------------------------------------------
+
+let the = document.querySelector("a:nth-of-type(7)");
+
+the.addEventListener("click", shrinkHandler);
+the.addEventListener("animationend", shrinkHandler);
+
+function shrinkHandler() {
+  the.classList.toggle("the");
+}
+
+// -------------------------------------------------------------
+// -------------------------------------------------------------
+
+let flow = document.querySelector("a:nth-of-type(8)");
+
+flow.addEventListener("click", slideHandler);
+flow.addEventListener("animationend", slideHandler);
+
+function slideHandler() {
+  flow.classList.toggle("flow");
+}
+
+// -------------------------------------------------------------
+// -------------------------------------------------------------
