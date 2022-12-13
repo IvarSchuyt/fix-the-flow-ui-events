@@ -120,9 +120,9 @@ function shootHandler() {
 
 let interface = document.querySelector("a:nth-of-type(10)");
 
-interface.addEventListener("click", slideHandler);
-interface.addEventListener("animationend", slideHandler);
+interface.addEventListener("click", fadeHandler);
+interface.addEventListener("animationend", fadeHandler);
 
-function slideHandler() {
+function fadeHandler() {
   interface.classList.toggle("interface");
 }
