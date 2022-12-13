@@ -105,3 +105,24 @@ function slideHandler() {
 
 // -------------------------------------------------------------
 // -------------------------------------------------------------
+
+let user = document.querySelector("a:nth-of-type(9)");
+
+user.addEventListener("click", shootHandler);
+user.addEventListener("animationend", shootHandler);
+
+function shootHandler() {
+  user.classList.toggle("user");
+}
+
+// -------------------------------------------------------------
+// -------------------------------------------------------------
+
+let interface = document.querySelector("a:nth-of-type(10)");
+
+interface.addEventListener("click", slideHandler);
+interface.addEventListener("animationend", slideHandler);
+
+function slideHandler() {
+  interface.classList.toggle("interface");
+}
